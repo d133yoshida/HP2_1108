@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    z-index: 0;
+    background-color: #FFF;
+    color: #fff;
+}
+
+main:before {
+    content: '';
+    background-image: url("../kapibara/IMG_20241019_154544.jpg");
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#bg {
+    padding-top: .5rem;
+
+}
+
+
+img {
+    width: 320px;
+    box-shadow: 0 4px 7px 0 rgba(219, 219, 219, 0.3);
+}
+
+#imgmain {
+    margin: 0px auto;
+    padding: 50px 2%;
+    max-width: auto;
+}
+
+.items>div>p {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px 20px 30px 40px / 5px 10px 50px 100px;
+    padding: 12px;
+    margin-bottom: 50PX;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    color: #fff;
+    background-image: url("../kapibara/IMG_20241019_154415.jpg");
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.header-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 5rem;
+    text-shadow: 0 0 10px rgb(255, 222, 160), 0 0 15px #fff;
+}
+
+.header-pattern {
+    position: absolute;
+    background-size: auto auto;
+    height: 100vh;
+    width: 100%;
+}
+
+#video {
+    width: 100%;
+}
+
+.header-text,
+.header-pattern,
+.header video {
+    width: 100%;
+    height: 100vh;
+}
+
+
+@media (min-width:1024px) {
+    #imgmain {
+        max-width: 1200px;
+    }
+
+    .items {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    img {
+        width: 350px;
+        padding: auto;
+    }
+}
+
